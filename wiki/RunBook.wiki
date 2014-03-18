@@ -66,6 +66,3 @@ With dynamic installation:
         }
         System.out.println();
 }}}
-
-=== See also ===
-https://github.com/okazymyrov/stribog/
