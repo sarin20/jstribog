@@ -5,6 +5,7 @@
 The goal of the project is to provide free and open source JCA (Java Cryptography Architecture) compatible implementation of GOST R 34.11-2012 cryptography hash function.
 
 http://tk26.ru/en/GOSTR3411-2012/GOST_R_34_11-2012_eng.pdf
+
 http://www.altell.ru/legislation/standards/gost-34.11-2012.pdf
 
 
