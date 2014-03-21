@@ -1,0 +1,3 @@
+=The Stribog digest algorithms provider=
+
+Use this class in java.security file, or for the dynamic installation to install the digest. The name of the provider is "JStribog". It contains "Stribog256" and "Stribog512" message digest algorithms. See examples and tests, read about computing the digest here: http://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#MDEx and be happy.
