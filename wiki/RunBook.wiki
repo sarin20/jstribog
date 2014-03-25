@@ -19,7 +19,7 @@ To use this library
  * add Stribog provider (ru.ubmb.jstribog.StribogProvider) to java.security
  * use the hash!
 
-Note: you can also use dinamic installation.
+Note: you can also use the dynamic installation.
 
 Read this for details about the installation process: http://docs.oracle.com/javase/7/docs/technotes/guides/security/crypto/HowToImplAProvider.html#Step7
 
