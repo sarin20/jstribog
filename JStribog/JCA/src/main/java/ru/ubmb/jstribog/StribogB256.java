@@ -17,22 +17,29 @@
 
 package ru.ubmb.jstribog;
 
-import java.security.Provider;
-
 /**
  *
  * @author sarin
  */
-public final class StribogProvider extends Provider{
+public class StribogB256 extends StribogB{
+    
+    public static final int[] IV = new int[64];
+    
+    static {
+        for (int i = 0; i < IV.length; i++) {
+            IV[i] = 0x01;
+        }
+    }
 
-    public StribogProvider() {
-        super("JStribog", 0.01, "Stribog (34.11-2012) Java implementation");
-        put("MessageDigest.Stribog512", Stribog512.class.getCanonicalName());
-        put("MessageDigest.Stribog256", Stribog256.class.getCanonicalName());
-        put("MessageDigest.StribogB256", StribogB256.class.getCanonicalName());
-        put("MessageDigest.StribogB512", StribogB512.class.getCanonicalName());
+    public StribogB256() {
+        super(IV);
     }
     
-    
+    @Override
+    protected byte[] engineDigest() {
+        byte[] result = new byte[32];
+        System.arraycopy(super.engineDigest(), 0, result, 0, result.length);
+        return result;
+    }
     
 }
